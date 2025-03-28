@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Cálculo de Combustível para Viagem</title>
+</head>
+
+<body>
+    <h1>Cálculo de Combustível para Viagem</h1>
+
+    <form id="fuel-form">
+        <label for="distance">Distância da viagem (km):</label>
+        <input type="number" id="distance" step="any" required>
+
+        <label for="consumption">Consumo do veículo (km/l):</label>
+        <input type="number" id="consumption" step="any" required>
+
+        <label for="price">Preço do combustível (R$/l):</label>
+        <input type="number" id="price" step="any" required>
+
+        <button type="submit">Calcular</button>
+    </form>
+
+    <div id="result" class="hidden">
+        <h2>Resultado</h2>
+        <p id="total-cost"></p>
+        <p id="total-consumption"></p>
+        <p id="total-distance"></p>
+        <button id="reset-button">Reiniciar</button>
+    </div>
+
+    <section id="history-section">
+        <h2>Histórico</h2>
+        <ul id="history-list"></ul>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
