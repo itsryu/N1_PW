@@ -54,7 +54,7 @@ No Firestore, os registros de cada cálculo são armazenados em uma collection c
    ```bash
    npm run start
    ```
-   O servidor iniciará em [http://localhost:3000](http://localhost:3000) e exporá os endpoints para salvar e recuperar o histórico.
+   O servidor iniciará em [http://localhost:5555](http://localhost:5555) e exporá os endpoints para salvar e recuperar o histórico.
 
 2. **Abra o Frontend:**
 
