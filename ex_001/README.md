@@ -4,7 +4,7 @@ Este projeto é uma aplicação web que calcula o consumo de combustível e o cu
 
 ## Pré-requisitos
 
-- **Node.js** (v14 ou superior) – [Baixe o Node.js](https://nodejs.org/)
+- **Node.js** (versão LTS ou superior) – [Baixe o Node.js](https://nodejs.org/)
 - Conta no **Firebase** e um projeto com o Firestore configurado – [Console do Firebase](https://console.firebase.google.com/)
 
 ## Instalação
@@ -28,14 +28,13 @@ Este projeto é uma aplicação web que calcula o consumo de combustível e o cu
    - Crie um projeto no Firebase e configure um banco de dados Firestore.
    - No diretório do backend, crie um arquivo `.env` e adicione suas credenciais do Firebase:
      ```env
-     FIREBASE_API_KEY=your_api_key
-     FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
-     FIREBASE_PROJECT_ID=your_project_id
-     FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
-     FIREBASE_MESSAGING_SENDER_ID=your_sender_id
-     FIREBASE_APP_ID=your_app_id
+     API_KEY=your_api_key
+     AUTH_DOMAIN=your_project_id.firebaseapp.com
+     PROJECT_ID=your_project_id
+     STORAGE_BUCKET=your_project_id.appspot.com
+     MESSAGING_SENDER_ID=your_sender_id
+     APP_ID=your_app_id
      ```
-   - Certifique-se de configurar o backend para utilizar essas variáveis de ambiente.
 
 ## Sobre a Collection "fuel" no Firestore
 
@@ -60,10 +59,7 @@ No Firestore, os registros de cada cálculo são armazenados em uma collection c
 2. **Abra o Frontend:**
 
    Navegue até o diretório `ex_001/frontend` e abra o arquivo `index.html` em seu navegador.  
-   Você pode usar uma extensão "Live Server" no VS Code ou executar:
-   ```bash
-   npx live-server ex_001/frontend
-   ```
+   Você pode usar uma extensão "Live Server" no VS Code.
 
 ## Como Funciona
 
