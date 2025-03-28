@@ -1,4 +1,4 @@
-# Projeto N1_PW
+# N1_PW
 
 Este repositório contém vários exercícios e/ou projetos organizados em subpastas (por exemplo, `ex_001`). Cada subpasta possui sua própria documentação detalhada em um arquivo `README.md`.
 
